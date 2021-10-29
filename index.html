@@ -5,32 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header>
-      <header>
       <div class="container container-nav">
-        <a class="container-nav__logo" href="index.html" lang="en"
-          >Web<span class="container-nav__span">Studio</span></a
+        <a class="nav__logo" href="index.html" lang="en"
+          >Web<span class="nav__span">Studio</span></a
         >
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link nav-list__active" href="index.html">Студия</a>
+              <a class="nav-list__link nav-list--active" href="index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link " href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="#contacts">Контакты</a>
@@ -66,7 +57,7 @@
           Заказать услугу
         </button>
       </section>
-      <section class="section section-bottom__padding">
+      <section class="section function-section function-section--padding">
         <div class="container">
           <h2 class="function__title">Функциональность компании</h2>
           <ul class="function__list">
@@ -94,7 +85,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-           <li class="function__item">
+            <li class="function__item">
               <div class="function__icon">
                 <svg class="function__svg">
                   <use href="./images/symbol-defs1.svg#icon-Vector"></use>
@@ -106,7 +97,7 @@
                 степени обуславливает.
               </p>
             </li>
-           <li class="function__item">
+            <li class="function__item">
               <div class="function__icon">
                 <svg class="function__svg">
                   <use href="./images/symbol-defs1.svg#icon-astronaut1"></use>
@@ -136,7 +127,7 @@
                 <p class="classes-list__text">Декстопные приложения</p>
               </div>
             </li>
-              <li class="classes-list__item">
+            <li class="classes-list__item">
               <div class="classes-list__block">
                 <img
                   class="classes-list__img"
@@ -147,7 +138,7 @@
                 <p class="classes-list__text">Мобильные приложения</p>
               </div>
             </li>
-             <li class="classes-list__item">
+            <li class="classes-list__item">
               <div class="classes-list__block">
                 <img
                   class="classes-list__img"
@@ -173,7 +164,7 @@
                 alt="team_img1"
               />
               <h3 class="team-list__heading">Игорь Демьяненко</h3>
-              <p class="team-list__text"lang="en">Product Designer</p>
+              <p class="team-list__text" lang="en">Product Designer</p>
               <ul class="team-icon__list">
                 <li class="team-icon__item">
                   <a class="team-icon__link"
@@ -209,7 +200,7 @@
                 </li>
               </ul>
             </li>
-         <li class="team-list__item">
+            <li class="team-list__item">
               <img
                 class="team-list__img"
                 src="images/img2.jpg"
@@ -346,7 +337,7 @@
       </section>
       <div class="container">
         <section class="section clients-section">
-          <h2 class="client__heading"> Постоянные клиенты</h2>
+          <h2 class="client__heading">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
               <a class="clients-list__link"
@@ -388,13 +379,13 @@
         </section>
       </div>
     </main>
-       <footer>
-      <div class="container container-footer">
-        <div class="container-footer__block">
-          <a class="container-footer__link" href="index.html" lang="en"
-            >Web<span class="container-footer__span">Studio</span></a
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer__block">
+          <a class="footer__logo" href="index.html" lang="en"
+            >Web<span class="footer__span">Studio</span></a
           >
-          <address class="container-footer__contacts" id="contacts">
+          <address class="footer__address" id="contacts">
             г. Киев, пр-т Леси Украинки, 26
           </address>
           <ul class="footer-list">
@@ -494,8 +485,12 @@
         <form class="fill-form">
           <div class="fill-form__field">
             <label class="fill-form__label" for="name">Имя</label
-            ><input class="fill-form__input" type="text" name="name" id="name" /><span
-              class="fill-form__icon"
+            ><input
+              class="fill-form__input"
+              type="text"
+              name="name"
+              id="name"
+            /><span class="fill-form__icon"
               ><svg
                 class="modal_svg"
                 width="18"
@@ -510,8 +505,12 @@
           </div>
           <div class="fill-form__field">
             <label class="fill-form__label" for="tel">Телефон</label>
-            <input class="fill-form__input" type="tel" name="tel" id="tel" /><span
-              class="fill-form__icon"
+            <input
+              class="fill-form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+            /><span class="fill-form__icon"
               ><svg
                 class="modal_svg"
                 width="18"
@@ -556,11 +555,15 @@
             ></textarea>
           </div>
           <label class="fill-form__accept">
-            <input class="fill-form__checkbox" type="checkbox" name="accept" /><span
-              class="fill-form__accept-icon"
-            ></span>
+            <input
+              class="fill-form__checkbox"
+              type="checkbox"
+              name="accept"
+            /><span class="fill-form__accept-icon"></span>
             Соглашаюсь с рассылкой и принимаю
-            <span class="fill-form__terms"><a class="fill-form__link"> Условия договора</a></span></label
+            <span class="fill-form__terms"
+              ><a class="fill-form__link"> Условия договора</a></span
+            ></label
           >
 
           <button class="fill-form__submit" type="submit">Отправить</button>
