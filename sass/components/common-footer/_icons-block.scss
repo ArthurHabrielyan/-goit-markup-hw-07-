@@ -9,7 +9,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 14px;
-  color: #fff;
+  color: $icons-title;
   line-height: 16px;
   letter-spacing: 0.03em;
 }
@@ -19,13 +19,13 @@
   justify-content: center;
 }
 
-.icons-block__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .icons-block__item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .icons-block__link {
@@ -35,32 +35,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms var(--timing-function);
-}
+  transition: background-color 250ms $timing-function;
 
-.icons-block__link:hover,
-.icons-block__link:focus {
-  background-color: #2196f3;
-}
-
-.icons-block__link:hover .icon,
-.icons-block__link:focus .icon {
-  fill: #ffffff;
-}
-
-.icons-block__link {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $icon-circle;
   border-radius: 50%;
-}
 
-.icons-block__link:hover,
-.icons-block__link:focus {
-  background-color: #2196f3;
+  &:hover,
+  &:focus {
+    background-color: $main-blue;
+  }
 }
 
 .icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  fill: $icon-color;
+  transition: fill 250ms $timing-function;
+
+  .icons-block__link:hover &,
+  .icons-block__link:focus & {
+    fill: $icon-color-active;
+  }
 }

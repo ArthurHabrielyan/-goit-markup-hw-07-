@@ -16,18 +16,18 @@
 }
 
 .contacts-list__link {
-  transition: color 250ms var(--timing-function);
-}
+  transition: color 250ms $timing-function;
 
-.contacts-list__link:focus,
-.contacts-list__link:hover {
-  color: #2196f3;
+  &:hover,
+  &:focus {
+    color: $main-blue;
+  }
 }
 
 .contacts-list__link {
   display: flex;
   align-items: center;
-  color: #757575;
+  color: $grey-color;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -38,12 +38,12 @@
 .contacts-list__icon {
   width: 20px;
   height: 20px;
-  fill: #757575;
+  fill: $nav-contacts-color;
   margin-right: 10px;
-  transition: fill 250ms var(--timing-function);
-}
+  transition: fill 250ms $timing-function;
 
-.contacts-list__link:hover .contacts-list__icon,
-.contacts-list__link:focus .contacts-list__icon {
-  fill: #2196f3;
+  .contacts-list__link:hover &,
+  .contacts-list__link:focus & {
+    fill: $main-blue;
+  }
 }

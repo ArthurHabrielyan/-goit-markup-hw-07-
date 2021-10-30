@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bcg_hero.jpg);
+    url(/images/bcg_hero.jpg);
   background-color: #2f303a;
   color: #ffffff;
 
@@ -17,11 +17,9 @@
 }
 
 .hero-title {
-  font-family: Roboto;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 
   max-width: 650px;
@@ -31,21 +29,19 @@
 
 .hero-button {
   display: inline-block;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  letter-spacing: 0.06em;
   border-radius: 4px;
-  background-color: #2196f3;
+  background-color: $main-blue;
   color: #ffffff;
   border: 0;
   width: 200px;
   height: 50px;
-  transition: background-color 250ms var(--timing-function);
-}
+  transition: background-color 250ms $timing-function;
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: $hover-blue;
+  }
 }
